@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  method="post">
+    <h2> <label >Validation of Email ID:</label></h2> 
+    <input type="text"  name="email_check" placeholder="provide the email ID" size="65"><br>
+    <button type="'submit">validate</button><br>
+    </form>
+
+    
+    {% if msg %}    
+        <h2>{{ msg }}</h2>
+    {% endif %}
+        <a href="/">Back to Home</a>
+        
+    </ul>
+</body>
+</html>

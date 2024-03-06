@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        ul {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            }
+    </style>
+</head>
+<body>
+    <h1><center>Regular Expressions (Replica)</center></h1>
+    <div class="row">
+        <div class="column">
+            <form action="/" method="POST">
+                <h2><label>Regular Expression:</label></h2> 
+                <input type="text" name="Regex" placeholder="insert your regular expression here" size="65">
+                <h2><label>Test String:</label></h2> 
+                <textarea name="teststring" cols="70" rows="20" placeholder="insert your test string here"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="column">
+            <h2>To check whether the email ID is valid or not.</h2>
+            <a href="/validation_email"> validate email</a>
+        </div>
+    </div>
+</body>
+</html>
